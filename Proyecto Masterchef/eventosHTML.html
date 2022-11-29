@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>MasterChef</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="estlilos.css" type="text/css">
+	<link rel="icon" href="images/logo/MasterChef_arreglado_32px.png">
+</head>
+<body>
+	<div id="contenedor">
+<!--*********** Barra de Navegacion ******************-->
+		<nav id="navegacion">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="eventosHTML.html">Eventos</a></li>
+				<li><a href="usuarios.html">Usuarios</a></li>
+				<li><a href="estadisticas.html">Estadisticas</a></li>
+			</ul>
+		</nav>
+<!--*********** Barra de Navegacion ******************-->
+<!--*********** Contenido ******************-->
+		<div id="contenido">
+			<!--*********** Header ******************-->
+			<header id="header">
+				<p>MasterChef</p>
+				<img src="images/logo/MasterChef_arreglado_32px.png" alt="logo master chef">
+			</header>
+			<!--***********fin Header ******************-->
+			<section id="cuerpo">
+				<div class="cabecera">
+					<p>Lista de eventos</p>
+				</div>
+				<nav id="navegacion2">
+					<a href="#"><button><i class="fa fa-trash"></i></button></a><!--**borrará los eventos seleccionados con el checkbox***-->
+					<a href="eventosHTML.html">Lista de evento</a>
+					<a href="eventosFormularioHTML.html">Nuevo evento</a>	
+				</nav>
+					<!--***********lista de eventos ******************-->
+                    <ul class="ulEventos">
+                        <li class="liEventos">
+                            <div class="divEvento">
+                                <div class="checkEventos">
+									<label for="checkbox_evento1"><input type="checkbox" name="checkbox_evento1"></label><!--**seleccionará el evento***-->
+                                </div>
+                                <div class="divEvento">
+                                	<img src="images/eventos/catering1.jpg" alt="triptico1"><a href="eventosVisualizadoHTML.html"><p class="pEvento">Evento 1</p></a>
+									<label for="estado"><b>Estado de evento:</b></label>
+									<select name="estado" id="estado" disabled>
+										<option value="en_curso">En curso</option>
+										<option value="finalizado">Finalizado</option>
+										<option value="anulado">Anulado</option>
+									</select>
+                                </div>                               
+                            </div>  
+                        </li>
+                        <li class="liEventos">
+                            <div class="divEvento">
+                                <div class="checkEventos">
+									<label for="checkbox_evento2"><input type="checkbox" name="checkbox_evento2"></label>
+                                </div>
+                                <div class="divEvento">
+                                	<img src="images/eventos/catering2.jpg" alt="triptico1"><a href="eventosVisualizadoHTML.html">
+										<p class="pEvento">Evento 2</p></a>
+										<label for="estado2"><b>Estado de evento:</b></label>
+										<select name="estado" id="estado2" disabled>
+											<option value="en_curso">En curso</option>
+											<option value="finalizado">Finalizado</option>
+											<option value="anulado">Anulado</option>
+										</select>
+                                </div>
+                            </div>  
+                        </li>
+                        <li class="liEventos">
+                            <div class="divEvento">
+                                <div class="checkEventos">
+									<label for="checkbox_evento3"><input type="checkbox" name="checkbox_evento3"></label>
+                                </div>
+                                <div class="divEvento">
+                                	<img src="images/eventos/catering3.jpg" alt="triptico1"><a href="eventosVisualizadoHTML.html"><p class="pEvento">Evento 3</p></a>
+									<label for="estado3"><b>Estado de evento:</b></label>
+									<select name="estado" id="estado3" disabled>
+										<option value="en_curso">En curso</option>
+										<option value="finalizado">Finalizado</option>
+										<option value="anulado">Anulado</option>
+									</select>
+                                </div>
+                            </div>  
+                        </li>
+                    </ul>
+				 <!--***********fin de la lista de eventos ******************-->   
+			<!--*********** Pie de pagina ******************-->
+			</section>
+			<footer id="footer">
+				<p class="final">Todos los Derechos Reservados &reg; </p>
+				<p>Diciembre de 2020</p>
+			</footer>
+		</div>
+	</div>
+<!--*********** Contenido ******************-->
+</body>
+</html>

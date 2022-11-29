@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Usuarios MasterChef</title>
+	<link rel="stylesheet" href="estlilos.css" type="text/css">
+	<link rel="icon" href="images/logo/MasterChef-32x32.png" sizes="32x32">
+</head>
+<body>
+	<div id="contenedor">
+<!--*********** Barra de Navegacion ******************-->
+		<nav id="navegacion">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="eventosHTML.html">Eventos</a></li>
+				<li><a href="usuarios.html">Usuarios</a></li>
+				<li><a href="estadisticas.html">Estadisticas</a></li>
+			</ul>
+		</nav>
+<!--*********** Barra de Navegacion ******************-->
+		<div id="contenido">
+			<!--*********** Header ******************-->
+			<header id="header">
+				<p>MasterChef</p>
+				<img src="images/logo/MasterChef_arreglado_32px.png" alt="logo master chef">
+			</header>
+			<!--***********fin Header ******************-->
+			<section id="cuerpo">
+				<div class="cabecera">
+					<p>Edición de usuarios</p>
+				</div>
+				<nav id="navegacion2">
+						<a href="usuarios.html">Lista de Usuarios</a>
+						<a href="nuevo_usuario.html">Nuevo Usuario</a>	
+				</nav>
+			    <div>
+					<form action="#"><!--/action_page.php-->
+						<hgroup>
+							<h3>Datos generales</h3><hr>
+						</hgroup>
+						<dl>
+							<dt>
+								<label for="nombre">Nombre: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+								<input type="text" class="entradas-usuario"id="nombre" name="nombre" value=""><br><br>
+							</dt>
+							<dt>
+								<label for="apellido">Apellidos:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+								<input type="text" class="entradas-usuario" id="apellido" name="apellido" value=""><br><br>
+							</dt>
+							<dt>
+								<label for="fname">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+								<input type="email" class="entradas-usuario" id="email" name="email " value=""><br><br>
+							</dt>
+							<!--
+							<dt>
+								<label for="intolerancias">Intolerancias:</label>
+								<select id="intolerancias" name="intolerancias" size="10" multiple>
+									<option value="volvo">Gluten</option>
+									<option value="saab">Lactosa</option>
+									<option value="fiat">Huevo</option>
+									<option value="mar">Pescado y Marisco</option>
+									<option value="frutossecos">Frutos Secos</option>
+									<option value="frutas">Frutas</option>
+									<option value="otros">Otros</option>
+									</select><br><br>
+							</dt>
+							
+							<dt>
+								<label for="puesto">Puesto:</label>
+								<select id="puesto" class="entradas-Nusuario" name="puesto">
+									<option value="cocinero">Cocinero</option>
+									<option value="camarero">Camarero</option>
+									<option value="metre">Mêtre</option>
+									<option value="jefesala">Jefe Sala</option>
+									<option value="jefebarra">Jefe Barra</option>
+								</select><br><br>
+							</dt>
+							
+							<dt>
+								<label for="team">Equipo:</label>
+								<select id="team" name="team">
+									<option value="rojo">Rojo</option>
+									<option value="verde">Verde</option>
+									<option value="azul">Azul</option>
+									<option value="amarillo">Amarillo</option>
+								</select><br><br>
+							</dt>
+							-->
+							<dt>
+								<label for="language">Idioma:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+								<select id="language" class="entradas-usuario" name="language">
+									<option value="castellano">Castellano</option>
+									<option value="euskera">Euskera</option>
+									<option value="ingles">Ingles</option>
+								</select><br><br>
+							</dt>
+							<dt>
+								<label for="Curso">Curso:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+								<select id="curso" class="entradas-usuario" name="curso">
+									<option value="primero">Primero Cocina</option>
+									<option value="segundo">Segundo Cocina</option>
+								</select><br><br>
+							</dt>
+							<!--
+							<dt>
+								<label for="triptico">Tríptico:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+								<input type="file"  class="buttonTriptico" name="triptico" required><br><br>
+							</dt>
+							-->
+						</dl>
+						<hgroup>
+							<h3>Datos de Accesso</h3><hr>
+						</hgroup>
+						<dl>							
+							<dt>
+								<label for="usuario">Usuario:&ensp;&ensp;&ensp;&ensp;</label>
+								<input type="text" class="entradas-usuario" id="usuario" name="usuario" value=""><br><br>
+							</dt>
+							<!--Invisibilizar la parte de la contraseña-->
+							<!--
+							<dt>
+								<label for="password">Contraseña:</label>
+								<input type="password" class="entradas-Nusuario" id="password" name="password" value=""><br><br>
+							</dt>	
+							<dt>
+								<label for="password">Repetir Contraseña:</label>
+								<input type="password" class="entradas-Nusuario" id="rpassword" name="rpassword" value=""><br><br>
+							</dt>
+							-->
+						</dl>
+						
+						<div>
+							<table style="width:100%">
+								<tr>
+									<td style="text-align:right;">
+										<button type="button" class="button" onclick="alert('Formulario borrado')">CANCELAR</button> 
+										<!-- <input type="submit" id="cancelar_submit" value="CANCELAR"> -->
+									</td>
+									<td style="text-align:left;">
+										<button type="button" class="button" onclick="alert('Formulario enviado')">APLICAR</button> 
+										<!-- <input type="submit" id="input_submit" value="APLICAR"> -->
+									</td>
+								</tr>
+							</table> 
+							<br>
+						</div>
+					</form>
+				  	<br>
+				</div>
+				<!--*********** Pie de pagina ******************-->
+			</section>	
+			<footer id="footer">
+				<p class="final">Todos los Derechos Reservados &reg; </p>
+				<p>Diciembre de 2020</p>
+			</footer>
+		</div>
+	</div>
+<!--*********** Contenido ******************-->
+</body>
+</html>

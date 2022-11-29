@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Usuarios MasterChef</title>
+	<link rel="stylesheet" href="estlilos.css" type="text/css">
+    <link rel="icon" href="images/logo/MasterChef-32x32.png" sizes="32x32">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div id="contenedor">
+<!--*********** Barra de Navegacion ******************-->
+		<nav id="navegacion">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="eventosHTML.html">Eventos</a></li>
+				<li><a href="usuarios.html">Usuarios</a></li>
+				<li><a href="estadisticas.html">Estadisticas</a></li>
+			</ul>
+		</nav>
+<!--*********** Barra de Navegacion ******************-->
+<!--*********** Contenido ******************-->
+		<div id="contenido">
+			<!--*********** Header ******************-->
+			<header id="header">
+				<p>MasterChef</p>
+				<img src="images/logo/MasterChef_arreglado_32px.png" alt="logo master chef">
+			</header>
+			<!--***********fin Header ******************-->
+			<section id="cuerpo">
+				<div class="cabecera">
+						<p>Edición de usuarios</p>
+				</div>
+				<nav id="navegacion2">
+					<a href="usuarios.html">Lista de Usuarios</a>
+					<a href="nuevo_usuario.html">Nuevo Usuario</a>	
+				</nav>
+				<br>
+				<form id="search" method="get">
+					<!-- <input type="submit" class="button" value="BUSCAR USUARIO">
+					<input type="search" class ="entradas-usuario" id="s" name="s" value="buscar...">	 -->		
+					  <input type="search" class ="entradas-usuario" placeholder="Buscar..." name="search">
+						<button type="submit" class ="lupa" ><i class="fa fa-search"></i></button>
+				</form>
+				<div class="resultado-personal">
+					<div class="resultado-interno2">
+						<div class="datos-resultado">
+							<table id="customers">
+								<thead>
+									<tr>
+										<th>Nombre</th>
+										<th>Email</th>
+										<th>Curso</th>
+										<th>Fecha Creación</th>
+										<th>Eliminar</th>
+										<th>Editar</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>John</td>
+										<td>jhon@educacion.navarra.es</td>
+										<td>curso1</td>
+										<td>23/11/2020</td>
+										<td><img src="images/icons/eliminar.png" alt="Borrar"  width="20" height="20"></td>
+										<td><img src="images/icons/editar.png" alt="Editar"  width="20" height="20"></td>
+									</tr>
+									<tr>
+										<td>Mary</td>
+										<td>mary@educacion.navarra.es</td>
+										<td>curso2</td>
+										<td>23/11/2020</td>
+										<td><img src="images/icons/eliminar.png" alt="Borrar"  width="20" height="20"></td>
+										<td><img src="images/icons/editar.png" alt="Editar"  width="20" height="20"></td>					
+									</tr>
+									<tr>
+										<td>July</td>
+										<td>july@educacion.navarra.es</td>
+										<td>curso1</td>
+										<td>23/11/2020</td>
+										<td><img src="images/icons/eliminar.png" alt="Borrar"  width="20" height="20"></td>
+										<td><img src="images/icons/editar.png" alt="Editar"  width="20" height="20"></td>
+									</tr>
+									<tr>
+										<td>Andrés</td>
+										<td>andres@educacion.navarra.es</td>
+										<td>curso1</td>
+										<td>23/11/2020</td>
+										<td><img src="images/icons/eliminar.png" alt="Borrar"  width="20" height="20"></td>
+										<td><img src="images/icons/editar.png" alt="Editar"  width="20" height="20"></td>
+									</tr>
+									<tr>
+										<td>Andrea</td>
+										<td>andrea@educacion.navarra.es</td>
+										<td>curso2</td>
+										<td>23/11/2020</td>
+										<td><img src="images/icons/eliminar.png" alt="Borrar"  width="20" height="20"></td>
+										<td><img src="images/icons/Editar.png" alt="Editar"  width="20" height="20"></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!--*********** Pie de pagina ******************-->
+			</section>
+			<footer id="footer">
+				<p class="final">Todos los Derechos Reservados &reg; </p>
+				<p>Diciembre de 2020</p>
+			</footer>
+		</div>
+	</div>
+<!--*********** Contenido ******************-->
+</body>
+</html>

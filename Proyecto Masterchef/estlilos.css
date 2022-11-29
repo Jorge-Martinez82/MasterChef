@@ -1,0 +1,698 @@
+/* ===================================================
+
+PROYECTO MASTER CHEF
+
+Create and Design By:
+
+Javier Vela Equiza
+Jorge Luis Martinez Moises
+Jorge Camacho Ochoa
+
+====================================================*/
+
+/*  VARIABLES EN CSS
+Es por eso que si queremos que una variable sea global (que sea accesible desde cualquier lugar del proyecto) la declaramos en la pseudoclase :root que apunta al elemento más alto del DOM <html></html> pero tiene más especificidad que el selector de etiqueta.
+*/
+
+:root{
+	--color-fondo-primario: rgba(245,245,200, .3);
+	--color-fondo-secundario: rgba(250,250,230, .5);
+	--color-fondo-terciario: linear-gradient(var(--color-fondo-secundario), var(--color-fondo-primario), var(--color-fondo-secundario));
+	--color-texto-principal: #333333;
+	--color-sombra: 10px 10px 5px rgba(110, 110, 110, 0.7);
+	--color-sombra-secundaria: 10px 10px 5px rgba(110, 110, 110, .9);
+}
+
+/*  GENERALES Para toda la pagina */
+body{
+	background-image: url(images/fondo/fondo.jpg);
+	font-family: serif;
+}
+
+#contenedor{/* Con esto todo el documento lo englobamos dentro de un contenedor que esta centrado lateralmente y una separacion superior e inferior de 20px */
+	width: 80%;
+	margin: 20px auto;
+}
+
+/*   Navegacion donde estan los elementos Home Eventos Ususarios y Estadisticas */
+#navegacion{
+	margin-bottom: 0px;
+}
+#navegacion ul{
+	padding-inline-start: 0px;
+}
+#navegacion ul li{
+	display: inline-flex;
+	list-style: none;
+}
+
+#navegacion a{
+	background-color: var(--color-fondo-primario);
+	color: var(--color-texto-principal);
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 5px;
+	padding: 10px;
+	box-shadow: 3px 3px 3px rgba(128,128,128,.6);
+	
+}
+
+#navegacion a:hover{
+	background-color: var(--color-fondo-secundario);
+	filter: opacity(0.5);
+	cursor: pointer;
+}
+
+#navegacion2{
+	text-align:right; 
+	padding-top:16px; 
+	padding-right:10px;
+}
+
+#navegacion2 a{
+	background-color: var(--color-fondo-primario);
+	color: var(--color-texto-principal);
+	text-transform: uppercase;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+	border-radius: 5px;
+	padding: 10px;
+	box-shadow: 3px 3px 3px rgba(128,128,128,.6);
+	
+}
+
+#navegacion2 a:hover{
+	background-color: var(--color-fondo-secundario);
+	filter: opacity(0.5);
+	cursor: pointer;
+}
+
+#navegacion2 a button{
+	background-color: transparent;
+	border: none;
+	font-size: 16px;
+	color: var(--color-texto-principal);
+}
+
+/*  Contenido */
+#contenido{
+	background-color: var(--color-fondo-secundario);
+	border-radius: 20px;
+	box-shadow: 5px 5px 3px rgba(128,128,128,.6);
+}
+
+/*   Header con Masterchef y logo*/
+#header{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-image: var(--color-fondo-terciario);
+	padding: 20px;
+	border-radius: 20px 20px 0px 0px;
+	
+}
+
+#header p{
+	font-weight: bold;
+	font-size: 60px;
+	color: rgba(51, 51, 51, .9);
+	font-weight: bold;
+	text-shadow: var(--color-sombra);
+}
+
+#header img{
+	width: 150px;
+/*	height: 150px;*/
+	opacity: 0.8;
+	filter: drop-shadow(var(--color-sombra-secundaria));
+}
+
+/* Cuerpo donde van los contenidos Usuario, Eventos y Estadisticas*/
+#cuerpo{
+	width: 90%;
+	margin: 0 auto;
+	color: var(--color-texto-principal);
+}
+.imagen{
+	display: flex;
+	position: realitve;
+	justify-content: center;
+	align-items: center;
+}
+
+.imagen-fondo{
+	width: 100%;
+	opacity: 0.7;
+}
+
+/*Pie de pagina o Footer donde van el registred*/
+#footer{
+	background-image: var(--color-fondo-terciario);
+	border-radius: 0px 0px 20px 20px;
+		text-align: right;
+	padding: 20px;
+}
+
+/*==========================================*/
+/*                                          */
+/*      Poner aqui hoja de estilos          */
+/*          para Estadisticas               */
+/*                                          */
+/*==========================================*/
+
+/*==========================================*/
+/*                                          */
+/*      Pagina principal Estadisicas         */
+/*                                          */
+/*==========================================*/
+
+.cabecera{
+	background-color: var(--color-fondo-secundario);
+	padding: 5px;
+	margin: 10px auto;
+	border-radius: 5px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 20px;
+/*	text-shadow: var(--color-sombra);*/
+	box-shadow: 5px 5px 3px rgba(128,128,128,.6);
+}
+
+.lista-eventos{
+	width: 90%;
+	margin: 40px auto;
+}
+.lista-eventos ul{
+	list-style: none;
+}
+.lista-eventos ul li{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--color-fondo-secundario);
+	border-radius: 5px;
+	margin: 20px auto;
+}
+.lista-eventos ul li img{
+	width: 250px;
+	height: 100px;
+	background-color: var(--color-fondo-secundario);
+	padding: 0 7%;
+	border-radius: 5px 0px 0px 5px;
+}
+.lista-eventos ul li p{
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+}
+.lista-eventos ul li a{
+	color: var(--color-texto-principal);
+	text-decoration: none;	
+	margin-right: 7%;
+}
+.button{
+	text-transform: capitalize;
+	padding: 5px;
+	background-color: rgba(250,250,250, 0.7);
+	border-radius: 5px;
+	box-shadow: 1px 1px 3px rgba(110, 110, 110, 0.5);
+}
+.button:hover{
+	cursor: pointer;
+	background-color: rgba(230,230,230, 0.5);
+}
+
+.caja-personal{
+	width:250px;
+	margin: 40px auto;
+	text-align: center;
+	background-color:  var(--color-fondo-secundario);
+	padding: 0px 0px 30px 0px;
+	border-radius: 20px;
+	font-size: 20px;
+}
+.caja-personal img{
+	width: 100%;
+	background-color: var(--color-fondo-secundario);
+	border-radius: 20px 20px 0px 0px;
+}
+.caja-personal a{
+	text-decoration: none;
+	color: var(--color-texto-principal);
+	font-size: 17px;
+}
+
+/*==========================================*/
+/*                                          */
+/*      Pagina Resultados Evento            */
+/*                                          */
+/*==========================================*/
+.cuerpo-resultado{
+	
+	margin: 40px auto;
+	padding-bottom: 40px;
+	
+}
+.mejor-resultados a{
+	margin-right: 10px;
+	padding: 12px 20px;
+	border-radius: 10px 10px 0px 0px;
+	text-decoration: none;
+	color: var(--color-texto-principal);
+	text-transform: capitalize;
+	font-size: 20px;	
+}
+.mejor-resultados a.mejor-servicio{
+	background-color: var(--color-fondo-secundario);
+}
+.mejor-resultados a.mejor-sabor{
+	background-color: var(--color-fondo-secundario);
+}
+.mejor-resultados a.mejor-triptico{
+	background-color: var(--color-fondo-secundario);
+}
+.mejor-resultados a.mejor-imagen{
+	background-color: var(--color-fondo-secundario);
+}
+.mejor-resultados a.mejor-presentacion{
+	background-color: var(--color-fondo-secundario);
+}
+.mejor-resultados a.equipo-ganador{
+	background-color: var(--color-fondo-secundario);
+}
+
+.resultados{
+	background-color: var(--color-fondo-secundario);
+	border-radius: 0px 0px 20px 20px;
+	margin: 10px auto;
+	padding: 40px 20px;
+	display: flex;
+	justify-content: space-around;
+}
+
+/* Grafico */
+* {
+    box-sizing: border-box;    
+}
+.grafico {
+    height: 200px;
+/*    margin: 1rem auto;*/
+    position: relative;
+    width: 200px;
+      } 
+.recorte {
+    border-radius: 50%;
+    clip: rect(0px, 200px, 200px, 100px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+     }
+.quesito {
+    border-radius: 50%;
+    clip: rect(0px, 100px, 200px, 0px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    font-family: monospace;
+    font-size: 1.5rem;
+     }
+.sombra {
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.3);
+    border: 5px solid #000;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+     }
+
+#porcion1 {
+    transform: rotate(0deg);
+     }
+
+#porcion1 .quesito {
+    background-color: rgba(0,0,255,.7);
+    transform: rotate(70deg);
+     }
+#porcion2 {
+    transform: rotate(70deg);
+     }
+#porcion2 .quesito {
+    background-color: rgba(255,255,0,.7);
+    transform: rotate(120deg);
+     }
+#porcion3 {
+    transform: rotate(-170deg);
+     }
+#porcion3 .quesito {
+    background-color: rgba(0,128,0,.7);
+    transform: rotate(25deg);
+     }
+#porcionFin {
+    transform:rotate(-145deg);
+     }
+#porcionFin .quesito {
+    background-color: rgba(255,0,0,.7);
+    transform: rotate(145deg);
+     }
+#porcion1 .quesito:after {
+    content: attr(data-rel);
+    left: 25%;
+    line-height: 5;
+    position: absolute;
+    top: 0;
+    transform: rotate(-70deg);
+}
+#porcion2 .quesito:after {
+    content: attr(data-rel);
+    left: 15%;
+    position: absolute;
+    top: 30%;
+    transform: rotate(-190deg);
+}
+#porcion3 .quesito:after {
+    content: attr(data-rel);
+    left: 35%;
+    position: absolute;
+    top: 4%;
+    transform: rotate(70deg);
+}
+#porcionFin .quesito:after {
+   content: attr(data-rel);
+   left: 10%;
+   position: absolute;
+   top: 30%;
+}
+/* fin de grafico quesito */
+
+.grupo-resultado{
+	font-weight: bold;
+	color: #ffffff;
+	text-align: center;
+}
+.fondo-equipo{
+	padding: 5px;
+	margin: 20px auto;
+	border-radius: 5px;
+}
+.grupo-resultado .verde{
+	background-color: rgba(0,128,0,.7);
+}
+.grupo-resultado .rojo{
+	background-color: rgba(255,0,0,.7);
+}
+.grupo-resultado .amarillo{
+	background-color: rgba(255,255,0,.7);
+	color: var(--color-texto-principal);
+}
+.grupo-resultado .azul{
+	background-color: rgba(0,0,255,.7);
+}
+
+/*      Equipo ganador   */
+.componentes-ganador{
+	display:inline-flex;
+	margin: 10px auto;
+}
+.imagen-componente{
+	margin: 0 5px;
+	background-color: var(--color-fondo-secundario);
+	box-shadow: var(--color-sombra-secundaria);
+	border-radius: 10px;
+}
+.imagen-componente img{
+	width: 100%;
+	border-radius: 10px 10px 0px 0px;
+
+}
+.imagen-componente .puesto{
+	font-weight: bold;
+}
+.imagen-componente p{
+	text-align: center;
+	text-transform: capitalize;
+}
+.descripcion-ganador{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 25px;
+	font-weight: bold;
+}
+.descripcion-ganador .equipo{
+	background-color: rgba(0,128,0,.7);
+	color: #ffffff;
+	border-radius: 5px;
+	padding: 10px;
+	box-shadow: var(--color-sombra-secundaria);
+}
+.descripcion-ganador .media{
+	background-color: var(--color-fondo-secundario);
+	box-shadow: var(--color-sombra-secundaria);
+	border-radius: 5px;
+	padding: 10px
+}
+
+/*    Menu desplegable Info   */
+.dropdown {
+	position: relative;
+	display: inline-block;
+	box-shadow: var(--color-sombra-secundaria);
+	padding: 10px;
+	border-radius: 5px;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 180px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px;
+	font-size: 20px;
+	font-weight: normal;
+	border-radius: 10px;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/*==========================================*/
+/*                                          */
+/*      Pagina Mejor Resultado Personal     */
+/*                                          */
+/*==========================================*/
+.resultado-interno{
+	width: 90%;
+	display: flex;
+	background-color: var(--color-fondo-secundario);
+	margin: 40px auto;
+	border-radius: 20px;
+}
+.resultado-interno img{
+	background-color:  var(--color-fondo-secundario);
+	border-radius: 20px 0px 0px 20px;
+	width: 200px;
+}
+.datos-resultado{
+	margin: 20px auto;
+}
+.datos-resultado p{
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.datos-resultado table{
+	border:1px solid var(--color-texto-principal);
+	border-collapse: collapse;
+}
+.datos-resultado table th{
+	border:1px solid var(--color-texto-principal);
+	padding: 10px;
+}
+.datos-resultado table td{
+	border:1px solid var(--color-texto-principal);
+	text-align: center;
+	padding: 10px;
+}
+
+/*==========================================*/
+/*                                          */
+/*      Estilos añadidos por JVela          */
+/*                                          */
+/*==========================================*/
+.resultado-interno2{
+	width: 90%;
+	display: flex;
+	background-color: var(--color-fondo-secundario);
+	margin: 40px auto;
+	border-radius: 20px;
+}
+.resultado-interno2 img{
+	background-color:  var(--color-fondo-secundario);
+	border-radius: 20px 0px 0px 20px;
+	width: 20px;
+}
+.entradas-usuario {
+	width: 250px;
+	padding: 5px;
+	border: 2px solid brown;
+    border-radius: 4px;
+}
+.lupa {
+	width: 30px;
+	padding: 5px;
+	border: 2px solid brown;
+    border-radius: 4px;
+	background-color: var(--color-fondo-primario);
+	color: var(--color-texto-principal);
+	box-shadow: 3px 3px 3px rgba(128,128,128,.6);
+}
+
+.lupa:hover{
+	background-color: var(--color-fondo-secundario);
+	filter: opacity(0.5);
+	cursor: pointer;
+}
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.buttonTriptico{
+	text-transform: capitalize;
+	padding: 5px;
+
+}
+.buttonTriptico:hover{
+	cursor: pointer;
+	background-color: rgba(230,230,230, 0.5);
+}
+
+/*==========================================*/
+/*                                          */
+/*      Estilos añadidos por JorgeMM        */
+/*                                          */
+/*==========================================*/
+.checkEventos{
+    width: 50px;
+	align-items: center;
+    justify-content: center;
+	display: flex;
+}
+.checkEventos input{
+	opacity: 0.8;
+}
+.divEvento{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: 0 10px;
+	border-radius: 30px;
+}
+.divEvento a{
+	text-decoration: none;
+	color: var(--color-texto-principal);
+	border: 1px solid var(--color-texto-principal);
+	border-radius: 10px;
+	padding: 0 20px;
+}
+
+.divEvento a p{
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.ulEventos{
+	width: 90%;
+	margin: 40px auto;
+	list-style: none;
+	
+}
+.liEventos{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--color-fondo-secundario);
+	border-radius: 5px;
+	margin: 20px auto;
+}
+.divEvento img{
+	width: 250px;
+	height: 100px;
+	background-color: var(--color-fondo-secundario);
+	padding: 0 7%;
+	border-radius: 5px 0px 0px 5px;
+}
+.pEvento{
+	text-transform: uppercase;
+	font-size: 20px
+/*	font-weight: ;*/
+}
+.cabeceraEventos{
+	background-color: var(--color-fondo-secundario);
+	padding: 5px;
+	margin: 10px auto;
+	border-radius: 5px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 20px;
+/*	text-shadow: var(--color-sombra);*/
+	box-shadow: 5px 5px 3px rgba(128,128,128,.6);
+	justify-content: space-around;
+	display: flex;
+}
+.eliminarEvento{
+	width: 20px;
+	height: 20px;
+}
+
+.tabla{
+	width: 100%;
+}
+.tabla td{
+	width: 20%;
+}
+.tabla td select{
+	float: left;
+}
+.tabla tr td input,.tabla tr td textarea{
+	width: 350px;
+	padding: 5px;
+	border: 2px solid brown;
+    border-radius: 4px;
+}
+
+.tabla tr td img{
+	width: 50%;
+}
+
+.divEquipos{
+	float: left;
+	width: 50%;
+}

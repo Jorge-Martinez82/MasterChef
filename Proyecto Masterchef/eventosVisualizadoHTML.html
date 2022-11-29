@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>MasterChef</title>
+	<link rel="stylesheet" href="estlilos.css" type="text/css">
+	<link rel="icon" href="images/logo/MasterChef_arreglado_32px.png">
+</head>
+<body>
+	<div id="contenedor">
+<!--*********** Barra de Navegacion ******************-->
+		<nav id="navegacion">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="eventosHTML.html">Eventos</a></li>
+				<li><a href="usuarios.html">Usuarios</a></li>
+				<li><a href="estadisticas.html">Estadisticas</a></li>
+			</ul>
+		</nav>
+<!--*********** Barra de Navegacion ******************-->
+<!--*********** Contenido ******************-->
+		<div id="contenido">
+			<!--*********** Header ******************-->
+			<header id="header">
+				<p>MasterChef</p>
+				<img src="images/logo/MasterChef_arreglado_32px.png" alt="logo master chef">
+			</header>
+			<!--***********fin Header ******************-->
+			<section id="cuerpo">
+				<div class="cabecera">
+					<p>Evento 1</p>
+				</div>
+				<nav id="navegacion2">
+					<a href="eventosHTML.html">Lista de evento</a>
+					<a href="eventosFormularioHTML.html">Nuevo evento</a>	
+			</nav>
+				<br/><br/>
+				<!--Los campos estan desabilitados. Sus valores seran los creados en la pagina Crear evento-->
+                <form>
+                	<div>
+						<table class="tabla">
+							<tr>
+								<td><label for="estado"><b>Estado de evento:</b></label></td>
+								<td><select name="estado" id="estado"><!--define el estado del evento-->
+									<option value="en_curso">En curso</option>
+									<option value="finalizado">Finalizado</option>
+									<option value="anulado">Anulado</option>
+								</select>
+								<button type="submit" class="button">Guardar</button></td><!--guardara la opcion en el estado del evento en la pagina visualizar-->
+							</tr>
+							<tr>
+								<td><label for="nombre"><b>Nombre de evento:</b></label></td>
+								<td><input type="text" name="nombre" value="Nombre del evento" disabled></td>
+							</tr>
+							<tr>
+								<td><label for="lugar"><b>Lugar:</b></label></td>
+								<td><input type="text" name="lugar" value="Lugar del evento" disabled></td>
+							</tr>
+							<tr>
+								<td><label for="descripcion"><b>Descripcion:</b></label></td>
+								<td colspan="2"><textarea rows="3" cols="50" placeholder="Descripcion del evento" disabled></textarea></td>
+							</tr>
+							<tr>
+								<td></td>
+							</tr>
+							<tr>
+								<td><label for="fecha"><b>Fecha:</b></label></td>
+								<td><input type="date" name="fecha" disabled></td>
+							</tr>
+							<tr>
+								<td><label for="Hora"><b>Hora:</b></label></td>
+								<td><input type="time" name="hora" disabled></td>
+							</tr>
+							<tr>
+								<td><label for="peso"><b>Peso:</b></label></td>
+								<td><label for="presentacion"><i>&nbspPresentacion</i></label>
+									 <select name="presentacion" disabled>
+										<option value="5">5%</option>
+										<option value="10">10%</option>
+										<option value="15">15%</option>
+										<option value="20">20%</option>
+										<option value="25">25%</option>
+										<option value="30">30%</option>
+										<option value="35">35%</option>
+										<option value="40">40%</option>
+										<option value="45">45%</option>
+										<option value="50">50%</option>
+										<option value="55">55%</option>
+										<option value="60">60%</option>
+										<option value="65">65%</option>
+										<option value="70">70%</option>
+										<option value="75">75%</option>
+										<option value="80">80%</option>
+										<option value="85">85%</option>
+										<option value="90">90%</option>
+										<option value="95">95%</option>
+										<option value="100">100%</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><label for="servicio"><i>&nbspServicio</i></label>
+									<select name="servicio" disabled>
+										<option value="5">5%</option>
+										<option value="10">10%</option>
+										<option value="15">15%</option>
+										<option value="20">20%</option>
+										<option value="25">25%</option>
+										<option value="30">30%</option>
+										<option value="35">35%</option>
+										<option value="40">40%</option>
+										<option value="45">45%</option>
+										<option value="50">50%</option>
+										<option value="55">55%</option>
+										<option value="60">60%</option>
+										<option value="65">65%</option>
+										<option value="70">70%</option>
+										<option value="75">75%</option>
+										<option value="80">80%</option>
+										<option value="85">85%</option>
+										<option value="90">90%</option>
+										<option value="95">95%</option>
+										<option value="100">100%</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><label for="sabor"><i>&nbspSabor</i></label>
+									<select name="sabor" disabled>
+										<option value="5">5%</option>
+										<option value="10">10%</option>
+										<option value="15">15%</option>
+										<option value="20">20%</option>
+										<option value="25">25%</option>
+										<option value="30">30%</option>
+										<option value="35">35%</option>
+										<option value="40">40%</option>
+										<option value="45">45%</option>
+										<option value="50">50%</option>
+										<option value="55">55%</option>
+										<option value="60">60%</option>
+										<option value="65">65%</option>
+										<option value="70">70%</option>
+										<option value="75">75%</option>
+										<option value="80">80%</option>
+										<option value="85">85%</option>
+										<option value="90">90%</option>
+										<option value="95">95%</option>
+										<option value="100">100%</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><label for="triptico"><i>&nbspTríptico</i></label>
+									<select name="triptico" disabled>
+										<option value="5">5%</option>
+										<option value="10">10%</option>
+										<option value="15">15%</option>
+										<option value="20">20%</option>
+										<option value="25">25%</option>
+										<option value="30">30%</option>
+										<option value="35">35%</option>
+										<option value="40">40%</option>
+										<option value="45">45%</option>
+										<option value="50">50%</option>
+										<option value="55">55%</option>
+										<option value="60">60%</option>
+										<option value="65">65%</option>
+										<option value="70">70%</option>
+										<option value="75">75%</option>
+										<option value="80">80%</option>
+										<option value="85">85%</option>
+										<option value="90">90%</option>
+										<option value="95">95%</option>
+										<option value="100">100%</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td></td>
+								<td><label for="imagen"><i>&nbspImagen personal</i></label>
+									<select name="imagen" disabled>
+										<option value="5">5%</option>
+										<option value="10">10%</option>
+										<option value="15">15%</option>
+										<option value="20">20%</option>
+										<option value="25">25%</option>
+										<option value="30">30%</option>
+										<option value="35">35%</option>
+										<option value="40">40%</option>
+										<option value="45">45%</option>
+										<option value="50">50%</option>
+										<option value="55">55%</option>
+										<option value="60">60%</option>
+										<option value="65">65%</option>
+										<option value="70">70%</option>
+										<option value="75">75%</option>
+										<option value="80">80%</option>
+										<option value="85">85%</option>
+										<option value="90">90%</option>
+										<option value="95">95%</option>
+										<option value="100">100%</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<td><label for="imagenEvento"><b>Imagen del evento:</b></label></td>
+								<td><input type="image" name="imagenEvento" disabled></td>							
+							</tr>
+						</table>
+						
+					
+					<br/>
+                    </div>
+                    <br/>
+                    <div class="divEquipos">
+
+                    	<label for="equipoRojo"><b>Equipo Rojo:</b></label><br/>
+							<select name="equipoRojo" disabled>
+								<option value="alumno1" >Alumno 1</option>
+								<option value="alumno2" >Alumno 2</option>
+								<option value="alumno3">Alumno 3</option>
+								<option value="alumno4">Alumno 4</option>
+								<option value="alumno5">Alumno 5</option>
+							</select>
+							<select name="rol" disabled>
+								<option value="Cocinero">Cocinero</option>
+								<option value="Camarero">Camarero</option>
+								<option value="Maitre">Maitre</option>
+								<option value="Jefe de cocina">Jefe de cocina</option>
+								<option value="Jefe de sala">Jefe de sala</option>
+							</select><br/>
+							<select name="equipoRojo" disabled>
+								<option value="alumno1">Alumno 1</option>
+								<option value="alumno2">Alumno 2</option>
+								<option value="alumno3">Alumno 3</option>
+								<option value="alumno4">Alumno 4</option>
+								<option value="alumno5">Alumno 5</option>
+							</select>
+							<select name="rol" disabled>
+								<option value="Cocinero">Cocinero</option>
+								<option value="Camarero">Camarero</option>
+								<option value="Maitre">Maitre</option>
+								<option value="Jefe de cocina">Jefe de cocina</option>
+								<option value="Jefe de sala">Jefe de sala</option>
+							</select><br/>
+							<select name="equipoRojo" disabled>
+								<option value="alumno1">Alumno 1</option>
+								<option value="alumno2">Alumno 2</option>
+								<option value="alumno3">Alumno 3</option>
+								<option value="alumno4">Alumno 4</option>
+								<option value="alumno5">Alumno 5</option>
+							</select>
+							<select name="rol" disabled>
+								<option value="Cocinero">Cocinero</option>
+								<option value="Camarero">Camarero</option>
+								<option value="Maitre">Maitre</option>
+								<option value="Jefe de cocina">Jefe de cocina</option>
+								<option value="Jefe de sala">Jefe de sala</option>
+							</select><br/>
+							<select name="equipoRojo" disabled>
+								<option value="alumno1">Alumno 1</option>
+								<option value="alumno2">Alumno 2</option>
+								<option value="alumno3">Alumno 3</option>
+								<option value="alumno4">Alumno 4</option>
+								<option value="alumno5">Alumno 5</option>
+							</select>
+							<select name="rol" disabled>
+								<option value="Cocinero">Cocinero</option>
+								<option value="Camarero">Camarero</option>
+								<option value="Maitre">Maitre</option>
+								<option value="Jefe de cocina">Jefe de cocina</option>
+								<option value="Jefe de sala">Jefe de sala</option>
+							</select><br/>
+							<select name="equipoRojo" disabled>
+								<option value="alumno1">Alumno 1</option>
+								<option value="alumno2">Alumno 2</option>
+								<option value="alumno3">Alumno 3</option>
+								<option value="alumno4">Alumno 4</option>
+								<option value="alumno5">Alumno 5</option>
+							</select>
+							<select name="rol" disabled>
+									<option value="Cocinero">Cocinero</option>
+									<option value="Camarero">Camarero</option>
+									<option value="Maitre">Maitre</option>
+									<option value="Jefe de cocina">Jefe de cocina</option>
+									<option value="Jefe de sala">Jefe de sala</option>
+							</select><br/>
+							<label for="TripticoRojo">Triptico:</label>
+                    <input type="image" name="TripticoRojo" disabled>
+					<br/><br/>
+					</div>
+					<div class="divEquipos">
+
+                        <label for="equipoAzul"><b>Equipo Azul:</b></label><br/>
+							<select name="equipoAzul" disabled>
+								<option value="alumno1">Alumno 1</option>
+								<option value="alumno2">Alumno 2</option>
+								<option value="alumno3">Alumno 3</option>
+								<option value="alumno4">Alumno 4</option>
+								<option value="alumno5">Alumno 5</option>
+							</select>
+                            <select name="rol" disabled>
+                                <option value="Cocinero">Cocinero</option>
+                                <option value="Camarero">Camarero</option>
+                                <option value="Maitre">Maitre</option>
+                                <option value="Jefe de cocina">Jefe de cocina</option>
+                                <option value="Jefe de sala">Jefe de sala</option>
+                            </select><br/>
+                            <select name="equipoAzul" disabled>
+                                <option value="alumno1">Alumno 1</option>
+                                <option value="alumno2">Alumno 2</option>
+                                <option value="alumno3">Alumno 3</option>
+                                <option value="alumno4">Alumno 4</option>
+                                <option value="alumno5">Alumno 5</option>
+                            </select>
+                            <select name="rol" disabled>
+                                <option value="Cocinero">Cocinero</option>
+                                <option value="Camarero">Camarero</option>
+                                <option value="Maitre">Maitre</option>
+                                <option value="Jefe de cocina">Jefe de cocina</option>
+                                <option value="Jefe de sala">Jefe de sala</option>
+                            </select><br/>
+                            <select name="equipoAzul" disabled>
+                                <option value="alumno1">Alumno 1</option>
+                                <option value="alumno2">Alumno 2</option>
+                                <option value="alumno3">Alumno 3</option>
+                                <option value="alumno4">Alumno 4</option>
+                                <option value="alumno5">Alumno 5</option>
+                            </select>
+                            <select name="rol" disabled>
+                                <option value="Cocinero">Cocinero</option>
+                                <option value="Camarero">Camarero</option>
+                                <option value="Maitre">Maitre</option>
+                                <option value="Jefe de cocina">Jefe de cocina</option>
+                                <option value="Jefe de sala">Jefe de sala</option>
+                            </select><br/>
+                            <select name="equipoAzul" disabled>
+                                <option value="alumno1">Alumno 1</option>
+                                <option value="alumno2">Alumno 2</option>
+                                <option value="alumno3">Alumno 3</option>
+                                <option value="alumno4">Alumno 4</option>
+                                <option value="alumno5">Alumno 5</option>
+                            </select>
+                            <select name="rol" disabled>
+                                <option value="Cocinero">Cocinero</option>
+                                <option value="Camarero">Camarero</option>
+                                <option value="Maitre">Maitre</option>
+                                <option value="Jefe de cocina">Jefe de cocina</option>
+                                <option value="Jefe de sala">Jefe de sala</option>
+                            </select><br/>
+                            <select name="equipoAzul" disabled>
+                                <option value="alumno1">Alumno 1</option>
+                                <option value="alumno2">Alumno 2</option>
+                                <option value="alumno3">Alumno 3</option>
+                                <option value="alumno4">Alumno 4</option>
+                                <option value="alumno5">Alumno 5</option>
+                            </select>
+                            <select name="rol" disabled>
+								<option value="Cocinero">Cocinero</option>
+								<option value="Camarero">Camarero</option>
+								<option value="Maitre">Maitre</option>
+								<option value="Jefe de cocina">Jefe de cocina</option>
+								<option value="Jefe de sala">Jefe de sala</option>
+							</select><br/>
+							<label for="TripticoAzul">Triptico:</label>
+                    <input type="image" name="TripticoAzul"  disabled>
+					<br/><br/>
+					</div>
+					<div class="divEquipos">
+
+						<label for="equipoVerde"><b>Equipo Verde:</b></label><br/>
+						    <select name="equipoVerde" disabled>
+                                <option value="alumno1">Alumno 1</option>
+                                <option value="alumno2">Alumno 2</option>
+                                <option value="alumno3">Alumno 3</option>
+                                <option value="alumno4">Alumno 4</option>
+                                <option value="alumno5">Alumno 5</option>
+							</select>
+							<select name="rol" disabled>
+								<option value="Cocinero">Cocinero</option>
+								<option value="Camarero">Camarero</option>
+								<option value="Maitre">Maitre</option>
+								<option value="Jefe de cocina">Jefe de cocina</option>
+								<option value="Jefe de sala">Jefe de sala</option>
+							</select><br/>
+							<select name="equipoVerde" disabled>
+								<option value="alumno1">Alumno 1</option>
+								<option value="alumno2">Alumno 2</option>
+								<option value="alumno3">Alumno 3</option>
+								<option value="alumno4">Alumno 4</option>
+								<option value="alumno5">Alumno 5</option>
+							</select>
+							<select name="rol" disabled>
+								<option value="Cocinero">Cocinero</option>
+								<option value="Camarero">Camarero</option>
+								<option value="Maitre">Maitre</option>
+								<option value="Jefe de cocina">Jefe de cocina</option>
+								<option value="Jefe de sala">Jefe de sala</option>
+							</select><br/>
+							<select name="equipoVerde" disabled>
+								<option value="alumno1">Alumno 1</option>
+								<option value="alumno2">Alumno 2</option>
+								<option value="alumno3">Alumno 3</option>
+								<option value="alumno4">Alumno 4</option>
+								<option value="alumno5">Alumno 5</option>
+							</select>
+							<select name="rol" disabled>
+								<option value="Cocinero">Cocinero</option>
+								<option value="Camarero">Camarero</option>
+								<option value="Maitre">Maitre</option>
+								<option value="Jefe de cocina">Jefe de cocina</option>
+								<option value="Jefe de sala">Jefe de sala</option>
+							</select><br/>
+							<select name="equipoVerde" disabled>
+								<option value="alumno1">Alumno 1</option>
+								<option value="alumno2">Alumno 2</option>
+								<option value="alumno3">Alumno 3</option>
+								<option value="alumno4">Alumno 4</option>
+								<option value="alumno5">Alumno 5</option>
+							</select>
+							<select name="rol" disabled>
+								<option value="Cocinero">Cocinero</option>
+								<option value="Camarero">Camarero</option>
+								<option value="Maitre">Maitre</option>
+								<option value="Jefe de cocina">Jefe de cocina</option>
+								<option value="Jefe de sala">Jefe de sala</option>
+							</select><br/>
+							<select name="equipoVerde" disabled>
+								<option value="alumno1">Alumno 1</option>
+								<option value="alumno2">Alumno 2</option>
+								<option value="alumno3">Alumno 3</option>
+								<option value="alumno4">Alumno 4</option>
+								<option value="alumno5">Alumno 5</option>
+							</select>
+							<select name="rol" disabled>
+									<option value="Cocinero">Cocinero</option>
+									<option value="Camarero">Camarero</option>
+									<option value="Maitre">Maitre</option>
+									<option value="Jefe de cocina">Jefe de cocina</option>
+									<option value="Jefe de sala">Jefe de sala</option>
+							</select><br/>
+							<label for="TripticoVerde">Triptico:</label>
+                    <input type="image" name="TripticoVerde" disabled>
+                    <br/><br/>
+					</div>
+					<div>
+
+						<label for="equipoVerde"><b>Equipo Amarillo:</b></label><br/>
+						    <select name="equipoVerde" disabled>
+                                <option value="alumno1">Alumno 1</option>
+                                <option value="alumno2">Alumno 2</option>
+                                <option value="alumno3">Alumno 3</option>
+                                <option value="alumno4">Alumno 4</option>
+                                <option value="alumno5">Alumno 5</option>
+							</select>
+							<select name="rol" disabled>
+								<option value="Cocinero">Cocinero</option>
+								<option value="Camarero">Camarero</option>
+								<option value="Maitre">Maitre</option>
+								<option value="Jefe de cocina">Jefe de cocina</option>
+								<option value="Jefe de sala">Jefe de sala</option>
+							</select><br/>
+							<select name="equipoVerde" disabled>
+								<option value="alumno1">Alumno 1</option>
+								<option value="alumno2">Alumno 2</option>
+								<option value="alumno3">Alumno 3</option>
+								<option value="alumno4">Alumno 4</option>
+								<option value="alumno5">Alumno 5</option>
+							</select>
+							<select name="rol" disabled>
+								<option value="Cocinero">Cocinero</option>
+								<option value="Camarero">Camarero</option>
+								<option value="Maitre">Maitre</option>
+								<option value="Jefe de cocina">Jefe de cocina</option>
+								<option value="Jefe de sala">Jefe de sala</option>
+							</select><br/>
+							<select name="equipoVerde" disabled>
+								<option value="alumno1">Alumno 1</option>
+								<option value="alumno2">Alumno 2</option>
+								<option value="alumno3">Alumno 3</option>
+								<option value="alumno4">Alumno 4</option>
+								<option value="alumno5">Alumno 5</option>
+							</select>
+							<select name="rol" disabled>
+								<option value="Cocinero">Cocinero</option>
+								<option value="Camarero">Camarero</option>
+								<option value="Maitre">Maitre</option>
+								<option value="Jefe de cocina">Jefe de cocina</option>
+								<option value="Jefe de sala">Jefe de sala</option>
+							</select><br/>
+							<select name="equipoVerde" disabled>
+								<option value="alumno1">Alumno 1</option>
+								<option value="alumno2">Alumno 2</option>
+								<option value="alumno3">Alumno 3</option>
+								<option value="alumno4">Alumno 4</option>
+								<option value="alumno5">Alumno 5</option>
+							</select>
+							<select name="rol" disabled>
+								<option value="Cocinero">Cocinero</option>
+								<option value="Camarero">Camarero</option>
+								<option value="Maitre">Maitre</option>
+								<option value="Jefe de cocina">Jefe de cocina</option>
+								<option value="Jefe de sala">Jefe de sala</option>
+							</select><br/>
+							<select name="equipoVerde" disabled>
+								<option value="alumno1">Alumno 1</option>
+								<option value="alumno2">Alumno 2</option>
+								<option value="alumno3">Alumno 3</option>
+								<option value="alumno4">Alumno 4</option>
+								<option value="alumno5">Alumno 5</option>
+							</select>
+							<select name="rol" disabled>
+									<option value="Cocinero">Cocinero</option>
+									<option value="Camarero">Camarero</option>
+									<option value="Maitre">Maitre</option>
+									<option value="Jefe de cocina">Jefe de cocina</option>
+									<option value="Jefe de sala">Jefe de sala</option>
+							</select><br/>
+							<label for="TripticoVerde">Triptico:</label>
+                    <input type="image" name="TripticoVerde" disabled>
+                    <br/><br/>
+					</div>
+					</form>
+					<nav>
+						<a href="eventosEditadoHTML.html">
+							<button class="button">Modificar</button><!--Los campos de la pagina se podran modificar al pulsar-->
+						</a>
+					</nav>
+				
+			<br/><br/>
+<!--*******Estos campos seran los que los jueces rellene desde la app************-->
+				<div class="cabecera">
+					<p>Jueces del evento</p>
+				</div><br/>
+					<div class="divEquipos">
+						<table>
+						<tr>
+							<td><label for="nombreJuez1"><b>Juez 1:</b></label></td> 
+							<td><input type="text" name="nombreJuez1" value="Nombre Juez 1" disabled></td> 
+						</tr>
+						<tr>
+							<td><label for="departamentoJuez1"><b>Departamento:</b></label></td>
+							<td><input type="text" name="departamentoJuez1" value="Departamento Juez 1" disabled></td>
+						</tr> 
+						<tr>
+							<td><label for="emailJuez1"><b>Email:</b></label></td>
+							<td><input type="text" name="emailJuez1" value="Email Juez 1" disabled></td>
+						</tr>
+						<tr>
+							<td><label for="alergiasJuez1"><b>Alergias:</b></label></td>
+							<td><input type="text" name="alergiasJuez1" value="Alergias Juez 1" disabled></td>
+						</tr>
+						<tr>
+							<td><select name="estadoJuez" id="estadoJuez1">
+								<option value="admitido">admitido</option>
+								<option value="noadmitido">no admitido</option>
+							</select></td>
+							<td><button class="button">Enviar</button><!--**este boton enviará un mensaje al juez con su estado*-->
+								<button class="button">modificar</button></td><!--**este boton dejará modificar los campos*-->
+						</tr>
+						</table>
+					</div>
+					<div>
+						<table>
+						<tr>
+							<td><label for="nombreJuez2"><b>Juez 2:</b></label></td> 
+							<td><input type="text" name="nombreJuez2" value="Nombre Juez 2" disabled></td> 
+						</tr>
+						<tr>
+							<td><label for="departamentoJuez2"><b>Departamento:</b></label></td>
+							<td><input type="text" name="departamentoJuez2" value="Departamento Juez 2" disabled></td>
+						</tr> 
+						<tr>
+							<td><label for="emailJuez2"><b>Email:</b></label></td>
+							<td><input type="text" name="emailJuez2" value="Email Juez 2" disabled></td>
+						</tr>
+						<tr>
+							<td><label for="alergiasJuez2"><b>Alergias:</b></label></td>
+							<td><input type="text" name="alergiasJuez2" value="Alergias Juez 2" disabled></td>
+						</tr>
+						<tr>
+							<td><select name="estadoJuez" id="estadoJuez2">
+								<option value="admitido">admitido</option>
+								<option value="noadmitido">no admitido</option>
+							</select></td>
+							<td><button class="button">Enviar</button><!--**este boton enviará un mensaje al juez con su estado*-->
+								<button class="button">modificar</button></td><!--**este boton dejará modificar los campos*-->
+						</tr>												  <!--**el boton se sustituirá por "guardar" cuando lo campos esten abiertos-->
+						</table>
+					</div>
+					<div class="divEquipos">
+						<table>
+						<tr>
+							<td><label for="nombreJuez3"><b>Juez 3:</b></label></td> 
+							<td><input type="text" name="nombreJuez3" value="Nombre Juez 3" disabled></td> 
+						</tr>
+						<tr>
+							<td><label for="departamentoJuez3"><b>Departamento:</b></label></td>
+							<td><input type="text" name="departamentoJuez3" value="Departamento Juez 3" disabled></td>
+						</tr> 
+						<tr>
+							<td><label for="emailJuez3"><b>Email:</b></label></td>
+							<td><input type="text" name="emailJuez3" value="Email Juez 3" disabled></td>
+						</tr>
+						<tr>
+							<td><label for="alergiasJuez3"><b>Alergias:</b></label></td>
+							<td><input type="text" name="alergiasJuez3" value="Alergias Juez 3" disabled></td>
+						</tr>
+						<tr>
+							<td><select name="estadoJuez" id="estadoJuez3">
+								<option value="admitido">admitido</option>
+								<option value="noadmitido">no admitido</option>
+							</select></td>
+							<td><button class="button">Enviar</button><!--**este boton enviará un mensaje al juez con su estado*-->
+								<button class="button">modificar</button></td><!--**este boton dejará modificar los campos*-->
+						</tr>
+						</table>
+					</div>
+					<div>
+						<table>
+						<tr>
+							<td><label for="nombreJuez4"><b>Juez 4:</b></label></td> 
+							<td><input type="text" name="nombreJuez4" value="Nombre Juez 4" disabled></td> 
+						</tr>
+						<tr>
+							<td><label for="departamentoJuez4"><b>Departamento:</b></label></td>
+							<td><input type="text" name="departamentoJuez4" value="Departamento Juez 4" disabled></td>
+						</tr> 
+						<tr>
+							<td><label for="emailJuez4"><b>Email:</b></label></td>
+							<td><input type="text" name="emailJuez4" value="Email Juez 4" disabled></td>
+						</tr>
+						<tr>
+							<td><label for="alergiasJuez4"><b>Alergias:</b></label></td>
+							<td><input type="text" name="alergiasJuez4" value="Alergias Juez 4" disabled></td>
+						</tr>
+						<tr>
+							<td><select name="estadoJuez" id="estadoJuez4">
+								<option value="admitido">admitido</option>
+								<option value="noadmitido">no admitido</option>
+
+							</select></td>
+							<td><button class="button">Enviar</button><!--**este boton enviará un mensaje al juez con su estado*-->
+								<button class="button">modificar</button></td><!--**este boton dejará modificar los campos*-->
+						</tr>
+						</table>
+					</div>
+				<br/>
+			<!--*********** Pie de pagina ******************-->
+			</section>
+			<footer id="footer">
+				<p class="final">Todos los Derechos Reservados &reg; </p>
+				<p>Diciembre de 2020</p>
+			</footer>
+		</div>
+	</div>
+<!--*********** Contenido ******************-->
+</body>
+</html>
